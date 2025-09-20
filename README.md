@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js 15 Project
 
-## Getting Started
+A modern web app built with the latest **Next.js 15** and **React 19**, styled using **TailwindCSS v4**, and enhanced with **Radix UI**, **Lucide icons**, and smooth animations powered by **GSAP**.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ⚡️ **Next.js 15** App Router
+- 🎨 **TailwindCSS v4** (with `tailwind-merge`)
+- 🌓 Dark/Light mode support (`next-themes`)
+- 🎭 Smooth animations with **GSAP** (`@gsap/react`)
+- 🧩 Accessible components with **Radix UI**
+- 🖼 Icon system with **Lucide React**
+- 📖 Beautiful typography via **@tailwindcss/typography**
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 15, React 19
+- **Styling**: TailwindCSS v4, tailwind-merge, tw-animate-css
+- **UI Components**: Radix UI, Lucide React
+- **Animations**: GSAP
+- **Themes**: next-themes
+- **Linting**: ESLint 9 + Next.js config
+- **Language**: TypeScript 5
+
+---
+
+## 📂 Project Structure
+
+```
+├── app/
+│   ├── pages/
+│   ├── global.css
+│   ├── layout.tsx
+│   ├── page.tsx
+├── components/
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/gihonhon/my-hello-world.git
+cd my-hello-world
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+```
+Note : If you want using Bun so you must change the config file!. Read the Bun Documentation for next.js config file.
+```
+
+### 3 Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📦 Build & Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Start (production)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploy Options
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Vercel --> recomended(Next.js native hosting)
+- Docke / VPS --> run with PM2 + Nginx
