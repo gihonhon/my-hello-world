@@ -1,42 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const pixel = localFont({ src: "../public/fonts/PressStart2P-Regular.ttf", variable: "--font-pixel", display: "swap" });
+const geist = localFont({ src: "../public/fonts/Geist.ttf", variable: "--font-geist-sans", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Hello World",
-  description: "Portofolio Website created by Gihonhon",
+  title: "Agung Gihon | Crafting the Web",
+  description: "Masuki dunia Agung Gihon. Mahasiswa Informatika dan web development learner, membangun pengalaman digital satu blok demi satu blok.",
+  icons: { icon: "/favicon.svg" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+    <html lang="id" suppressHydrationWarning>
+      <body className={`${pixel.variable} ${geist.variable}`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>{children}</ThemeProvider>
         <Analytics />
       </body>
     </html>

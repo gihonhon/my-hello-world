@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 138 354 342" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="cottage-planks" width="60" height="24" patternUnits="userSpaceOnUse">
+      <rect width="60" height="24" fill="#b38a51"/>
+      <path d="M0 0h60M0 12h60M30 0v12M10 12v12" fill="none" stroke="#866237" stroke-width="2"/>
+      <path d="M3 3h24m8 12h22M4 20h20" fill="none" stroke="#c79c5c" stroke-width="2"/>
+    </pattern>
+    <pattern id="cottage-stone" width="42" height="28" patternUnits="userSpaceOnUse">
+      <rect width="42" height="28" fill="#66695c"/>
+      <path d="M2 2h22v10H2zM27 2h13v10H27zM2 16h10v10H2zM15 16h25v10H15z" fill="#898c7c"/>
+      <path d="M3 3h20M28 3h11M16 17h23" stroke="#a3a491" stroke-width="2"/>
+    </pattern>
+    <pattern id="cottage-roof" width="52" height="18" patternUnits="userSpaceOnUse" patternTransform="matrix(1 -.355 .9 1 0 0)">
+      <rect width="52" height="18" fill="#826039"/>
+      <path d="M0 0h52M0 17h52M26 0v18" stroke="#59452c" stroke-width="2"/>
+      <path d="M2 3h22m6 0h19" stroke="#a0804b" stroke-width="2"/>
+    </pattern>
+    <pattern id="cottage-log" width="16" height="56" patternUnits="userSpaceOnUse">
+      <rect width="16" height="56" fill="#60482c"/>
+      <path d="M3 0v32m6-20v44m5-56v20M2 42v14" stroke="#84613a" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <!-- Three aligned wall corners and their foundation establish the volume. -->
+  <path d="M89 439h206l90-31 20 27-100 35H89z" fill="#24371c" opacity=".3"/>
+  <path d="M282 288 374 255v175l-92 33z" fill="url(#cottage-planks)"/>
+  <path d="M282 288 374 255v175l-92 33z" fill="#382b1a" opacity=".25"/>
+  <path d="M98 288h184v175H98z" fill="url(#cottage-planks)"/>
+  <path d="M98 431h184v32H98zM282 431l92-33v32l-92 33z" fill="url(#cottage-stone)"/>
+  <path d="M282 431l92-33v32l-92 33z" fill="#253020" opacity=".2"/>
+  <!-- The front gable sits under the two sloping roof edges. -->
+  <path d="M98 289 190 192l92 97z" fill="url(#cottage-planks)"/>
+  <path d="M93 286h15v151H93zM272 286h15v151h-15zM364 255h14v149l-14 5z" fill="url(#cottage-log)"/>
+  <path d="M108 294h164v10H108z" fill="#6e502e"/>
+  <!-- Roof plane joins the same ridge and eaves as the front elevation. -->
+  <path d="m190 184 90-32 112 112-90 32z" fill="url(#cottage-roof)" stroke="#493923" stroke-width="5"/>
+  <path d="m190 184 90-32 10 9-91 32z" fill="#b29359"/>
+  <path d="m301 291 95-34v15l-95 34z" fill="#523c25"/>
+  <!-- Oak stair blocks make the pitched silhouette recognizably Minecraft. -->
+  <path d="M78 294v-17h16v-16h16v-16h16v-16h16v-16h16v-16h16v-16h23v16h16v16h16v16h16v16h16v16h16v16h17v17h-17v-10h-16v-16h-16v-16h-16v-16h-16v-16h-16v-16h-17v16h-16v16h-16v16h-16v16h-16v16h-16v10z" fill="#60472a"/>
+  <path d="M78 277h16v-16h16v-16h16v-16h16v-16h16v-16h16v-16h23v6h-17v16h-16v16h-16v16h-16v16h-16v16h-16v16H78z" fill="#b7965a"/>
+  <!-- Small attic vent, framed window, and a full-height oak door. -->
+  <path d="M176 246h29v28h-29z" fill="#59412a"/>
+  <path d="M181 251h19v18h-19z" fill="#26392e"/>
+  <path d="M182 252h17v4h-17zM182 261h17v3h-17z" fill="#8f7044"/>
+  <path d="M119 319h54v59h-54z" fill="#59422a"/>
+  <path d="M124 324h44v48h-44z" fill="#527f83"/>
+  <path d="M127 326h15v20h-15zM150 352h15v17h-15z" fill="#b3d4d0"/>
+  <path d="M131 326h7v13h-7zM153 352h7v10h-7z" fill="#e1e9d7"/>
+  <path d="M143 324h5v48h-5zM124 346h44v5h-44z" fill="#6f5533"/>
+  <path d="M116 377h60v7h-60z" fill="#795a35"/>
+  <path d="M207 328h48v106h-48z" fill="#473924"/>
+  <path d="M213 333h36v97h-36z" fill="url(#cottage-planks)"/>
+  <path d="M218 338h11v19h-11zM233 338h11v19h-11z" fill="#304234"/>
+  <path d="M219 339h9v5h-9zM234 339h9v5h-9z" fill="#99b6a3"/>
+  <path d="M219 369h24v24h-24zM219 401h24v22h-24z" fill="#99713e" stroke="#79572e" stroke-width="2"/>
+  <path d="M239 386h5v5h-5z" fill="#292e23"/>
+  <!-- Side window follows the same receding wall perspective. -->
+  <path d="m307 307 38-14v52l-38 14z" fill="#4c3b27"/>
+  <path d="m312 311 28-10v40l-28 10z" fill="#669092"/>
+  <path d="m314 313 9-3v14l-9 3zM330 328l8-3v13l-8 3z" fill="#b2cfbe"/>
+  <path d="m324 306 4-1v41l-4 2zM312 327l28-10v4l-28 10z" fill="#5c4c31"/>
+  <path d="m304 359 44-16v6l-44 16z" fill="#5a4329"/>
+  <!-- Two stone steps connect the doorway to the ground. -->
+  <path d="M204 433h55v10h-55z" fill="#a0a18d"/>
+  <path d="M199 443h65v9h-65z" fill="#7c806e"/>
+  <path d="M194 452h75v9h-75z" fill="#969984"/>
+  <path d="M194 461h75v6h-75z" fill="#5a624c"/>
+</svg>
